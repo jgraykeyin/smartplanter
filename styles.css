@@ -1,0 +1,97 @@
+/* 
+font-family: 'Merriweather', serif;
+font-family: 'Sacramento', cursive;
+*/
+
+body {
+    background-image: url("images/pattern51.png");
+    font-family: 'Merriweather', serif;
+}
+
+#main-container {
+    margin-top: 4vh;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    border: 2px solid #C0C0C0;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 0.2vw rgba(0,0,0,0.25));
+    animation: fadeIn ease 6s;
+    -webkit-animation: fadeIn ease 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+    0% {filter: drop-shadow(0 0 0.2vw rgba(0,0,0,0.25));}
+    50% {filter: drop-shadow(0 0 0.8vw rgba(12, 157, 111, 0.4));}
+    100% {filter: drop-shadow(0 0 0.2vw rgba(0,0,0,0.25));}
+}
+
+@-moz-keyframes fadeIn {
+    0% {filter: drop-shadow(0 0 0.2vw rgba(0,0,0,0.25));}
+    50% {filter: drop-shadow(0 0 0.8vw rgba(12, 157, 111, 0.4));}
+    100% {filter: drop-shadow(0 0 0.2vw rgba(0,0,0,0.25));}  
+}
+
+@-webkit-keyframes fadeIn {
+    0% {filter: drop-shadow(0 0 0.2vw rgba(0,0,0,0.25));}
+    50% {filter: drop-shadow(0 0 0.8vw rgba(12, 157, 111, 0.4));}
+    100% {filter: drop-shadow(0 0 0.2vw rgba(0,0,0,0.25));}
+}
+
+@-o-keyframes fadeIn {
+    0% {filter: drop-shadow(0 0 0.2vw rgba(0,0,0,0.25));}
+    50% {filter: drop-shadow(0 0 0.8vw rgba(12, 157, 111, 0.4));}
+    100% {filter: drop-shadow(0 0 0.2vw rgba(0,0,0,0.25));}
+}
+
+@-ms-keyframes fadeIn {
+    0% {filter: drop-shadow(0 0 0.2vw rgba(0,0,0,0.25));}
+    50% {filter: drop-shadow(0 0 0.8vw rgba(12, 157, 111, 0.4));}
+    100% {filter: drop-shadow(0 0 0.2vw rgba(0,0,0,0.25));}
+}
+
+header {
+    padding: 1.6vw;
+    font-size: 6vw;
+    font-weight: medium;
+    color: rgb(9, 93, 99);
+}
+
+#tagline {
+    font-family: 'Sacramento', cursive;
+    font-size: 4vw;
+    color: #883595;
+}
+
+#temperature, #humidity {
+    color: rgb(9, 93, 99);
+    font-weight:bold;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+
+#bop-moisture, #mon-moisture {
+    color: rgb(9, 93, 99);
+    font-weight:bold;
+    font-size: 28px;  
+}
+
+
+@media only screen and (max-width: 700px) {
+    #main-container {
+        margin-top: 2vh;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+  }
